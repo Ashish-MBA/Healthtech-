@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctolib Clinical AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#0574E4', // Doctolib Blue
+                hover: '#0052CC',
+              },
+              surface: '#FFFFFF',
+              background: '#F0F1F6',
+              text: {
+                primary: '#313E4A',
+                secondary: '#708090',
+              },
+              alert: {
+                danger: '#B65644',
+                warning: '#FFAB00',
+                success: '#00875F',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F0F1F6;
+        color: #313E4A;
+      }
+      /* Custom scrollbar for cleanliness */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 3px;
+      }
+      
+      @media print {
+        @page { margin: 2cm; }
+        body { background-color: white; }
+        .no-print { display: none !important; }
+        /* Hide UI elements */
+        header, aside, .action-bar, .toast { display: none !important; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.9",
+    "zustand/": "https://aistudiocdn.com/zustand@^5.0.9/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
